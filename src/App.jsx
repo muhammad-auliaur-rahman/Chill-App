@@ -1,7 +1,7 @@
 import Beranda from "./pages/Beranda";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
-import Register from "./pages/register";
+import Register from "./pages/Register";
 import Series from "./pages/Series";
 import Film from "./pages/Film";
 import DaftarSaya from "./pages/DaftarSaya";
