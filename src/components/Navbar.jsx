@@ -31,7 +31,7 @@ function Navbar() {
       <div className="nav-right">
         <button onClick={tampilkanMenu}>
           <img src="/public/profil.png" alt="Profil" className="foto-profil" />
-          <img src="/public/Vector.png" alt=">" srcset="" className="Panah" />
+          <img src="/public/Vector.png" alt=">" className="Panah" />
         </button>
         <div className="Menu" style={isClick ? { opacity: "1" } : {}}>
           <NavLink to="/Profil">

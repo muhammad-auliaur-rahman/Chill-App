@@ -5,12 +5,12 @@ import Register from "./pages/register";
 import Series from "./pages/Series";
 import Film from "./pages/Film";
 import DaftarSaya from "./pages/DaftarSaya";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Beranda />} />
         <Route path="/Login" element={<Login />} />
