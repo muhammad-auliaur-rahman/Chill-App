@@ -1,10 +1,10 @@
-
+import Navbar from "../components/Navbar";
 function Series() {
   return (
     <div>
-      ini Series
+      <Navbar />
     </div>
-  )
+  );
 }
 
-export default Series
+export default Series;
