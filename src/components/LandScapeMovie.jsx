@@ -1,4 +1,4 @@
-import { dataMelanjutkan } from "../data/DataDummy.js";
+import { dataMelanjutkan } from "../Data/DataDummy.js";
 import "../styles/MovieList.css";
 import { useRef } from "react";
 

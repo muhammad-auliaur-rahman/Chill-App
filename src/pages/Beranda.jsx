@@ -1,5 +1,5 @@
 import HeroSection from "../components/HeroSection";
-import LandScapeMovie from "../components/LandscapeMovie";
+import LandScapeMovie from "../components/LandScapeMovie";
 import MovieSection from "../components/MovieSection.jsx";
 import Navbar from "../components/Navbar";
 import { TopRating, FilmTrending, BaruRilis } from "../data/DataDummy.js";
