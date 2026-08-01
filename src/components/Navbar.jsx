@@ -11,16 +11,8 @@ function Navbar() {
     <header>
       <div className="nav-left">
         <div className="logo">
-          <img
-            src="/public/logo/movie-open.png"
-            alt="movie"
-            className="Movie-logo"
-          />
-          <img
-            src="/public/logo/CHILL.png"
-            alt="Chill-Logo"
-            className="Chill-Logo"
-          />
+          <img src="/logo/movie-open.png" alt="movie" className="Movie-logo" />
+          <img src="/logo/CHILL.png" alt="Chill-Logo" className="Chill-Logo" />
         </div>
 
         <NavLink to="/Series">Series</NavLink>
@@ -30,8 +22,8 @@ function Navbar() {
 
       <div className="nav-right">
         <button onClick={tampilkanMenu}>
-          <img src="/public/profil.png" alt="Profil" className="foto-profil" />
-          <img src="/public/Vector.png" alt=">" className="Panah" />
+          <img src="/profil.png" alt="Profil" className="foto-profil" />
+          <img src="/Vector.png" alt=">" className="Panah" />
         </button>
         <div className="Menu" style={isClick ? { opacity: "1" } : {}}>
           <NavLink to="/Profil">
