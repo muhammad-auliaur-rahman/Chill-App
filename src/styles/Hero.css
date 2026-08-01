@@ -79,7 +79,7 @@
   transition: transform 0.2s ease;
 }
 
-.btn-play:hover {
+.btn-mulai:hover {
   transform: scale(1.1);
 }
 
