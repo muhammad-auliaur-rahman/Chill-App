@@ -280,3 +280,35 @@ export const BaruRilis = [
     genre: ["Komedi", "Drama", "Sains & Fiksi"],
   },
 ];
+
+export const genreColumns = [
+  [
+    { name: "Aksi", href: "Aksi" },
+    { name: "Anak-Anak", href: "#" },
+    { name: "Anime", href: "#" },
+    { name: "Britania", href: "#" },
+  ],
+  [
+    { name: "Drama", href: "#" },
+    { name: "Fantasi Ilmiah & Fantasi", href: "#" },
+    { name: "Kejahatan", href: "#" },
+    { name: "KDrama", href: "#" },
+  ],
+  [
+    { name: "Komedi", href: "#" },
+    { name: "Pertualangan", href: "#" },
+    { name: "Perang", href: "#" },
+    { name: "Romantis", href: "#" },
+  ],
+  [
+    { name: "Sains & Alam", href: "#" },
+    { name: "Thriller", href: "#" },
+  ],
+];
+
+export const bantuanLinks = [
+  { name: "FAQ", href: "#" },
+  { name: "Kontak Kami", href: "#" },
+  { name: "Privasi", href: "#" },
+  { name: "Syarat & Ketentuan", href: "#" },
+];

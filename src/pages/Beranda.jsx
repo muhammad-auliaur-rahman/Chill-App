@@ -1,3 +1,4 @@
+import Footer from "../components/Footer.jsx";
 import HeroSection from "../components/HeroSection";
 import LandScapeMovie from "../components/LandScapeMovie";
 import MovieSection from "../components/MovieSection.jsx";
@@ -8,7 +9,7 @@ import "../styles/Beranda.css";
 
 function beranda() {
   return (
-    <div>
+    <>
       <Navbar />
       <HeroSection />
       <main>
@@ -25,7 +26,8 @@ function beranda() {
         {/* Portrait Baris 3 */}
         <MovieSection judul="Rilis Baru" dataFilm={BaruRilis} />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
 
