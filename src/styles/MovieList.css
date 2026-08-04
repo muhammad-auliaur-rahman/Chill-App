@@ -406,6 +406,11 @@
     -ms-overflow-style: none;
   }
 
+  .rasio-4-kolom,
+  .rasio-5-kolom {
+    padding: 0;
+    margin: 0;
+  }
   /* 3. Penyesuaian Kolom/Kartu di HP */
   .rasio-4-kolom > .card-4-kolom {
     width: 95% !important; /* Kartu besar, menyisakan 25% kartu sebelah agar mengintip */
@@ -487,6 +492,10 @@
     gap: 20px;
   }
 
+  .rasio-4-kolom {
+    padding: 150px 0;
+    margin: -150px 0;
+  }
   /* 3. Penyesuaian Lebar Kartu untuk Tablet */
   /* Rasio 4 Kolom: Menampilkan sekitar 3 kartu sekaligus */
   .rasio-4-kolom > .card-4-kolom {

@@ -145,11 +145,12 @@
 
   .content {
     margin: 0 18px 40px 22px;
-    width: 320px;
+    z-index: 99999;
   }
 
   .desk {
     gap: 12px;
+    width: 320px;
   }
 
   .desk h1 {
