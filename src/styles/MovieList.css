@@ -557,3 +557,93 @@
     font-size: 12px;
   }
 }
+
+/* ================================================= */
+/* KHUSUS TAMPILAN HP LANDSCAPE (HP Miring Mendatar)   */
+/* ================================================= */
+@media screen and (max-width: 932px) and (orientation: landscape) {
+  /* 1. Judul & Jarak Bagian Film */
+  .bagian-film {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .judul-bagian {
+    font-size: 18px;
+  }
+
+  /* 2. Reset Padding Pembungkus Rel agar tidak terlalu jauh */
+  .pembungkus-rel {
+    padding: 60px 0 !important;
+    margin: -60px 0 !important;
+    gap: 12px;
+  }
+
+  .rasio-4-kolom {
+    padding: 100px 0 !important;
+    margin: -100px 0 !important;
+  }
+
+  /* 3. Lebar Kartu di HP Landscape (Tampilkan sekitar 3 kartu agar pas) */
+  .rasio-4-kolom > .card-4-kolom {
+    flex: 0 0 calc(33.333% - 10px) !important;
+    min-width: calc(33.333% - 10px) !important;
+  }
+
+  .rasio-5-kolom .pembungkus-kartu-film {
+    flex: 0 0 calc(25% - 10px) !important;
+    min-width: calc(25% - 10px) !important;
+  }
+
+  /* 4. Sembunyikan Tombol Panah karena layar sempit & berbasis sentuhan */
+  .tombol-panah {
+    display: none !important;
+  }
+
+  /* 5. Sesuaikan Ukuran Teks di dalam Kartu Utama */
+  .judul-film {
+    font-size: 11px;
+  }
+
+  .rating-film {
+    font-size: 9px;
+  }
+
+  .info-kartu {
+    padding: 20px 8px 6px 8px;
+  }
+
+  /* 6. Penyesuaian Modal Hover untuk HP Landscape */
+  .modal-hover {
+    display: block !important;
+    width: 280px !important; /* Diperkecil agar muat di layar HP yang pendek */
+    height: auto !important;
+    min-height: unset !important;
+    max-height: 85vh; /* Membatasi tinggi agar tidak melebihi layar */
+    overflow-y: auto; /* Aktifkan scroll jika konten modal lebih panjang */
+  }
+
+  .modal-body {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .modal-judul {
+    font-size: 14px;
+  }
+
+  .modal-rating {
+    font-size: 12px;
+  }
+
+  .btn-aksi {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .modal-info,
+  .modal-genres {
+    font-size: 12px;
+  }
+}

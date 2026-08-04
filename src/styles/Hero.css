@@ -132,9 +132,110 @@
   width: 25px;
   cursor: pointer;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+/* ================================================= */
+/* KHUSUS TAMPILAN TABLET (768px - 1024px)          */
+/* ================================================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .hero {
-    height: 40vh;
+    height: 40vh; /* Disesuaikan agar tidak terlalu pendek/panjang */
+    margin-top: 70px;
+  }
+
+  .content {
+    margin: 40px;
+    gap: 24px;
+  }
+
+  .desk {
+    gap: 16px;
+  }
+
+  .desk h1 {
+    font-size: 36px;
+  }
+
+  .desk p {
+    font-size: 15px;
+    width: 80%; /* Agar tidak terlalu lebar di layar tablet */
+    -webkit-line-clamp: 3;
+  }
+
+  .btn-mulai,
+  .btn-information {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .btn-information img {
+    width: 20px;
+  }
+
+  .age-rating {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .mute {
+    padding: 8px;
+  }
+
+  .mute ion-icon {
+    font-size: 20px;
+    width: 20px;
+  }
+}
+
+/* ================================================= */
+/* KHUSUS TAMPILAN HP LANDSCAPE (Lebar > Tinggi)     */
+/* ================================================= */
+@media screen and (max-width: 932px) and (orientation: landscape) {
+  .hero {
+    height: 85vh; /* Memanfaatkan ruang vertikal hp landscape yang pendek */
+    margin-top: 50px;
+  }
+
+  .content {
+    margin: 20px 40px;
+    gap: 16px;
+  }
+
+  .desk {
+    gap: 8px;
+    width: 100%;
+  }
+
+  .desk h1 {
+    font-size: 22px;
+  }
+
+  .desk p {
+    font-size: 11px;
+    width: 100%;
+    -webkit-line-clamp: 2; /* Batasi 2 baris agar teks tidak menumpuk ke bawah */
+  }
+
+  .btn-mulai,
+  .btn-information {
+    padding: 4px 14px;
+    font-size: 11px;
+  }
+
+  .btn-information img {
+    width: 16px;
+  }
+
+  .age-rating {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  .mute {
+    padding: 4px;
+  }
+
+  .mute ion-icon {
+    font-size: 16px;
+    width: 16px;
   }
 }
 @media screen and (max-width: 768px) {
