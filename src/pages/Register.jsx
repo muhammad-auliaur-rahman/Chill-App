@@ -11,18 +11,17 @@ export default function Register() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
+  const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
 
-    // Validasi sederhana kecocokan password
     if (password !== confirmPassword) {
-      alert("Kata sandi tidak cocok!");
+      setErrorMessage("Kata sandi tidak sesuai!");
       return;
     }
-
+    setErrorMessage("");
     console.log({ email, username, password });
     // Setelah berhasil daftar, bisa diarahkan ke halaman login atau beranda
     navigate("/Beranda");
@@ -94,7 +93,12 @@ export default function Register() {
 
           {/* Input Konfirmasi Kata Sandi (Tambahan baru) */}
           <div className="input-group">
-            <label htmlFor="confirmPassword">Konfirmasi Kata Sandi</label>
+            <div className="label-error-wrapper">
+              <label htmlFor="confirmPassword">Konfirmasi Kata Sandi</label>
+              {errorMessage && (
+                <span className="error-text">{errorMessage}</span>
+              )}
+            </div>{" "}
             <div className="password-wrapper">
               <input
                 type={showConfirmPassword ? "text" : "password"}
