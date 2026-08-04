@@ -83,6 +83,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .footer-utama {
+    padding: 20px;
+  }
   .kontainer-footer {
     flex-direction: column;
     gap: 20px;
