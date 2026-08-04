@@ -12,3 +12,11 @@ main {
 body {
   background-color: #181a1c;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 20px 0 20px 16px;
+    margin-top: 0;
+    overflow: visible;
+  }
+}

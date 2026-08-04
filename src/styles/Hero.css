@@ -132,3 +132,65 @@
   width: 25px;
   cursor: pointer;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 225px;
+    margin-top: 60px;
+  }
+
+  .content {
+    margin: 0 18px 40px 22px;
+    width: 320px;
+  }
+
+  .desk {
+    gap: 12px;
+  }
+
+  .desk h1 {
+    font-size: 24px;
+  }
+
+  .desk p {
+    font-size: 12px;
+    width: 320px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .btn-left {
+    gap: 8px;
+  }
+
+  .btn-mulai,
+  .btn-information {
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+
+  .btn-information img {
+    width: 20px;
+  }
+
+  .age-rating {
+    padding: 4px 4px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mute {
+    padding: 5px;
+    border-radius: 24px;
+  }
+
+  .mute ion-icon {
+    stroke-width: 10px;
+    font-size: 10px;
+  }
+}

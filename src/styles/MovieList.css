@@ -375,3 +375,176 @@
 .modal-genres .dot {
   font-size: 18px;
 }
+
+/* ,,,,,,,,,,, */
+/* ================================================= */
+/* KHUSUS TAMPILAN MOBILE (Layar HP < 768px)          */
+/* ================================================= */
+@media screen and (max-width: 767px) {
+  /* 1. Bagian Utama & Judul */
+  .bagian-film {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .judul-bagian {
+    font-size: 20px;
+    padding-right: 16px;
+  }
+
+  /* 2. Pengaturan Slider & Pembungkus Rel */
+  .pembungkus-rel {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important; /* Paksa item berjejer horizontal ke kanan */
+    overflow-x: auto !important; /* Aktifkan scroll geser */
+    scroll-snap-type: x mandatory; /* Efek magnet saat digeser */
+    padding-right: 16px; /* Jarak space di ujung akhir slider */
+    gap: 16px;
+    /* Sembunyikan scrollbar di HP agar terlihat bersih */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  /* 3. Penyesuaian Kolom/Kartu di HP */
+  .rasio-4-kolom > .card-4-kolom {
+    width: 95% !important; /* Kartu besar, menyisakan 25% kartu sebelah agar mengintip */
+    min-width: 95%;
+  }
+  .rasio-5-kolom .pembungkus-kartu-film {
+    width: 30% !important; /* Menampilkan 2.5 kartu agar kartu ke-3 mengintip di kanan */
+    min-width: 30% !important;
+  }
+  /* Jika ada kategori khusus dengan kartu lebih besar (misal: Lanjutan Tonton) */
+  .lanjutan-film .pembungkus-kartu-film {
+    flex: 0 0 95% !important;
+    min-width: 95% !important;
+  }
+
+  /* 4. Sembunyikan Tombol Panah Navigasi di HP */
+  .tombol-panah {
+    display: none !important;
+  }
+
+  /* 5. Sembunyikan Modal Hover di HP */
+  /* Karena HP menggunakan sentuhan, modal hover desktop dinonaktifkan */
+  .modal-hover {
+    display: none !important;
+  }
+
+  /* 6. Penyesuaian Ukuran Font & Info di Kartu HP */
+  .kartu-film {
+    width: 100% !important;
+    border-radius: 6px;
+  }
+
+  .info-kartu {
+    padding: 30% 10px 10px 10px;
+  }
+
+  .judul-film {
+    font-size: 12px;
+  }
+  .rating-film {
+    font-size: 10px;
+  }
+
+  .badge-label {
+    transform: scale(0.85);
+    transform-origin: top left;
+  }
+  .label-baru {
+    transform: scale(0.85);
+    transform-origin: top left;
+  }
+
+  .label-top10 {
+    transform-origin: top right;
+  }
+}
+
+/* ================================================= */
+/* KHUSUS TAMPILAN TABLET (Layar 768px s.d. 1024px)  */
+/* ================================================= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* 1. Bagian Utama & Judul */
+  .bagian-film {
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+
+  .judul-bagian {
+    font-size: 24px;
+  }
+
+  /* 2. Pengaturan Slider & Rel */
+  .pembungkus-rel {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-behavior: smooth;
+    gap: 20px;
+  }
+
+  /* 3. Penyesuaian Lebar Kartu untuk Tablet */
+  /* Rasio 4 Kolom: Menampilkan sekitar 3 kartu sekaligus */
+  .rasio-4-kolom > .card-4-kolom {
+    flex: 0 0 calc(33.333% - 14px);
+    min-width: calc(33.333% - 14px);
+  }
+
+  /* Rasio 5 Kolom: Menampilkan sekitar 4 kartu sekaligus */
+  .rasio-5-kolom .pembungkus-kartu-film {
+    flex: 0 0 calc(25% - 15px);
+    min-width: calc(25% - 15px);
+  }
+
+  /* 4. Tombol Panah Navigasi Tetap Ada & Proporsional */
+  .tombol-panah {
+    display: flex !important;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .panah-kiri {
+    left: -16px;
+  }
+
+  .panah-kanan {
+    right: -16px;
+  }
+
+  /* 5. Modal Hover Tetap Aktif dengan Penyesuaian Ukuran */
+  .modal-hover {
+    display: block !important; /* Memastikan modal tetap aktif di tablet */
+    width: 340px; /* Sedikit diperkecil dari versi desktop (408px) agar pas */
+    height: auto; /* Menyesuaikan konten di dalam modal */
+    min-height: 400px;
+  }
+
+  /* 6. Penyesuaian Konten di Dalam Modal Tablet */
+  .modal-body {
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .modal-judul {
+    font-size: 18px;
+  }
+
+  .btn-aksi {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  /* 7. Penyesuaian Ukuran Teks Kartu Utama */
+  .judul-film {
+    font-size: 15px;
+  }
+
+  .rating-film {
+    font-size: 12px;
+  }
+}
