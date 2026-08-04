@@ -12,8 +12,8 @@ function App() {
     <>
       {/* <Navbar /> */}
       <Routes>
-        <Route path="/" element={<Beranda />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/Beranda" element={<Beranda />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Series" element={<Series />} />
         <Route path="/Film" element={<Film />} />

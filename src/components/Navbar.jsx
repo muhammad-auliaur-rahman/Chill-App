@@ -38,7 +38,7 @@ function Navbar() {
             </span>
             Ubah Premium
           </NavLink>
-          <NavLink to="/Login">
+          <NavLink to="/">
             <span>
               <ion-icon name="log-out-outline"></ion-icon>
             </span>
