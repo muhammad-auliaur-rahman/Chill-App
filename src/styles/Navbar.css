@@ -101,7 +101,7 @@ a.active {
     display: none;
   }
   .nav-left a {
-    font-size: 10px;
+    font-size: 14px;
   }
   .nav-right button {
     gap: 4px;
@@ -115,11 +115,11 @@ a.active {
     height: 8px;
   }
   .Menu {
-    width: 113px;
+    width: 120px;
     top: 30px;
     right: 5px;
   }
   .Menu a {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
